@@ -1,0 +1,46 @@
+---
+layout: default
+keywords: [余果, yuguo]
+---
+
+<section class="home posts postindex wrapper">
+
+	<div class="postprofile">
+		<img src="{{ site.author_image }}" class="author" alt="user">
+		<div class="info">
+			<h4>{{ site.author_name }}</h4>
+			<p>{{ site.author_bio }}<a href="/about">更多…</a></p>
+		</div>
+	</div>
+
+	<div class="book">
+		<a href="/weblog/full-stack-engineer/" title="Web全栈工程师的自我修养" class="book-cover">
+			<img src="/files/common/full-stack-engineer-thumb.png" alt="Web全栈工程师的自我修养">
+		</a>
+		<div class="book-desc">
+			<h2>我的书</h2>
+			<p>“全栈工程师”是能使用编程，独立完成一个产品的人。</p>
+			<p>因为技术不断发展，所以要持续学习新技术，但是比起马不停蹄追赶新的技术，我认为更重要的是学习“面向未来的开发技术”。这本书表达了我在“全栈学习”上的想法。</p>
+			<p><a href="/weblog/full-stack-engineer/" class="button">关于《Web全栈工程师的自我修养》</a></p>
+		</div>
+
+	</div>
+
+	<h2>最新文章<small>（<a href="/weblog">全部</a>）</small></h2>
+	<ul>
+	{% for post in site.posts limit:5 %}
+		<li class="post {% if post.featured == true %} featured {% endif %}">
+			{% if post.external %}
+			<a href="{{ post.external }}" target="_blank"><span class="external-link">{{ post.title }}</span>
+			{% else %}
+			<a href="{{ post.url | prepend: site.baseurl }}"><span>{{ post.title }}</span>
+			{% endif %}
+			<time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %Y" }}</time></a>
+		</li>
+	{% endfor %}
+	</ul>
+
+</section>
+
+
+</section>

@@ -1,0 +1,42 @@
+# Site Settings
+title: 						"Yuguo.us"
+url:						"https://yuguo.us"
+email: 						"me@yuguo.us"
+description: 			"全栈工程师，《Web全栈工程师的自我修养》作者。"
+baseurl: 					""
+logourl: 					"/files/common/avatar.jpg"
+fa-logo: 					"fa-camera-retro"
+
+# Author Settings
+author_name: 				"余果"
+author_url: 				"https://yuguo.us"
+author_bio: 				"全栈工程师，《Web全栈工程师的自我修养》作者。"
+author_email: 				"me@yuguo.us"
+author_image: 				"/files/common/avatar.jpg"
+
+
+# Social Settings
+twitter_url: 				"https://twitter.com/yuguo"
+github_url:  				"https://github.com/yuguo"
+
+# Theme Settings
+theme_disqus_shortname: 	"yuguo"
+theme_google_comments: 		false
+theme_reading_time: 		true
+theme_autoload_comments: 	false
+theme_always_show_nav: 		true
+
+# New Collection for Referral
+collections:
+  referrals:
+    output: false
+
+# SASS Settings
+# DO NOT MODIFY
+sass:
+ sass_dir: "assets/css/"
+ style: :compressed
+
+# Build Settings
+markdown: 					kramdown
+permalink: 					weblog/:title/
