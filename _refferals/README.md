@@ -1,1 +1,1 @@
-在线阅读地址： [https://yuguo.us/referral/](https://yuguo.us/referral/)
+Online： [https://tokyomarker.org/referral/](https://tokyomarker.org/referral/)
